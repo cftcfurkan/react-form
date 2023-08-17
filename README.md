@@ -30,3 +30,6 @@ Follow these steps to get started with the React Form with Dynamic Inputs reposi
 
 4. **Run the Development Server:** Start the development server to see the project in action:
    `npm run dev`
+
+
+![image](https://github.com/cftcfurkan/react-forms/assets/90473630/c1d83b52-9f1d-4993-be05-5f85ad0b0ef3)
