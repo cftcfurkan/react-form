@@ -18,23 +18,26 @@ function App() {
         console.log(value);
       }}
     >
-      <Form>
+      {
+        ({ handleSubmit, handleChange}) => (
+      <form onSubmit={handleSubmit}>
         <label htmlFor="firstName">First Name</label>
-        <Field id="firstName" name="firstName" placeholder="Jane" />
+        <input name="firstName" onChange={handleChange} />
         <br/><br/>
         <label htmlFor="lastName">Last Name</label>
-        <Field id="lastName" name="lastName" placeholder="Doe" />
+        <input name="lastName" onChange={handleChange} />
         <br/><br/>
         <label htmlFor="email">Email</label>
         <Field
-          id="email"
           name="email"
           placeholder="jane@acme.com"
           type="email"
         />
         <br/><br/>
         <button type="submit">Submit</button>
-      </Form>
+      </form>
+        )
+      }
     </Formik>
   </div>
 
